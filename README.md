@@ -7,7 +7,7 @@
 
 Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar minhas habilidades, projetos e experiências como Analista de Dados. O site foi construído com tecnologias modernas de desenvolvimento web, focado em performance e design responsivo.
 
-### <a href="https://portfolio-wenes11.vercel.app/" target="_blank" rel="noopener noreferrer">➡️ Acessar a Versão Online</a>
+### <a href="https://portfolio-wenes11-omega.vercel.app/" target="_blan" rel="noopener noreferrer">➡️ Acessar a Versão Online</a>
 
 *Substitua o link acima pelo link final do seu deploy na Vercel!*
 
