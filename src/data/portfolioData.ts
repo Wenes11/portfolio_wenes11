@@ -15,7 +15,7 @@ export const portfolioData = {
     profileImageUrl: profileImg,
     about: "Analista de Dados apaixonado por transformar dados brutos em insights de negócios acionáveis. Possuo experiência em visualização de dados, modelagem, e automação de processos. Estou sempre em busca de novos desafios e oportunidades para aplicar minhas habilidades analíticas para resolver problemas complexos.",
     contact: {
-        email: "wenes-vargas10@gmail.com",
+        email: "wenes.vargas10@gmail.com",
         linkedin: "https://www.linkedin.com/in/jo%C3%A3o-vitor-vargas-martins-b67b29292/",
         github: "https://github.com/Wenes11",
     },
