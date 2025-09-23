@@ -1,73 +1,98 @@
-# React + TypeScript + Vite
+# Portfólio Pessoal - João Vitor Vargas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar minhas habilidades, projetos e experiências como Analista de Dados. O site foi construído com tecnologias modernas de desenvolvimento web, focado em performance e design responsivo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### <a href="https://portfolio-wenes11.vercel.app/" target="_blank" rel="noopener noreferrer">➡️ Acessar a Versão Online</a>
 
-## React Compiler
+*Substitua o link acima pelo link final do seu deploy na Vercel!*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades Principais
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O portfólio está organizado nas seguintes seções:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* **Header de Navegação:** Com links para todas as seções importantes e um design responsivo para mobile.
+* **Seção Sobre Mim:** Uma breve introdução sobre meu perfil profissional e paixão por dados.
+* **Projetos:** Uma galeria com os principais projetos que desenvolvi, com links para o GitHub, descrições e tecnologias utilizadas.
+* **Experiência Profissional:** Um resumo das minhas experiências de trabalho anteriores.
+* **Certificados:** Exibição dos certificados mais relevantes que adquiri.
+* **Contato:** Links diretos para minhas redes profissionais e e-mail.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este projeto foi construído utilizando as seguintes tecnologias:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Tecnologia | Descrição |
+| :--- | :--- |
+| **React** | Biblioteca JavaScript para a construção da interface de usuário. |
+| **TypeScript** | Superset do JavaScript que adiciona tipagem estática ao código. |
+| **Vite** | Ferramenta de build moderna que oferece um ambiente de desenvolvimento rápido. |
+| **Tailwind CSS** | Framework CSS utility-first para estilização rápida e responsiva. |
+| **Git & GitHub** | Para versionamento de código e hospedagem do repositório. |
+| **Vercel** | Plataforma de cloud para deploy e hospedagem contínua do projeto. |
+
+---
+
+## 🚀 Rodando o Projeto Localmente
+
+Para executar este projeto na sua máquina local, siga os passos abaixo:
+
+### Pré-requisitos
+
+* <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.js</a> (versão 18 ou superior)
+* <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a>
+
+### Instalação
+
+1.  Clone o repositório:
+    ```bash
+    git clone [https://github.com/Wenes11/portfolio-wenes11.git](https://github.com/Wenes11/portfolio-wenes11.git)
+    ```
+
+2.  Navegue até a pasta do projeto:
+    ```bash
+    cd portfolio-wenes11
+    ```
+
+3.  Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+4.  Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+
+5.  Abra seu navegador e acesse `http://localhost:5173` (ou a porta indicada no terminal).
+
+---
+
+## 🚀 Deploy em Produção
+
+O deploy deste projeto é feito de forma contínua através da **Vercel**. Cada `push` para a branch `main` no GitHub aciona um novo build e deploy automático, garantindo que a versão online esteja sempre atualizada.
+
+---
+
+
+## 📫 Contato
+
+**João Vitor Vargas Martins**
+
+<p>
+  <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-vargas-martins-b67b29292/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/Wenes11" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+</p>
