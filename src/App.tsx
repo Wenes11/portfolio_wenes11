@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 // Importando seus componentes e dados
 import Header from './components/Header'; // Ajuste o caminho se necessário
