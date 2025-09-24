@@ -18,7 +18,7 @@ export const portfolioData = {
         email: "wenes.vargas10@gmail.com",
         linkedin: "https://www.linkedin.com/in/jo%C3%A3o-vitor-vargas-martins-b67b29292/",
         github: "https://github.com/Wenes11",
-        whatsapp: "5564992486472",
+        whatsapp: "64992486472",
     },
     projects: [
         {
