@@ -37,7 +37,7 @@ export const portfolioData = {
         {
             title: "Dashboard de Vendas em Excel",
             description: "Construção de um dashboard dinâmico no Excel para acompanhamento de métricas de vendas.",
-            link: "https://github.com/Wenes11/-dashboard-de-vendas-no-Excel",
+            link: "https://github.com/Wenes11/dashboard-de-vendas",
             imageUrl: excelProjectImg,
             tags: ["Excel", "Dashboard", "Vendas"]
         },
