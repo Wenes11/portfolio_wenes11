@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     return (
         <header className="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
             <nav className="container mx-auto px-6 py-3 flex justify-between items-center"> {/* py-3 para ajustar a altura com o padding dos links */}
-                <a href="#" className="text-xl font-bold text-emerald-400">JV</a>
+                <a href="#" className="text-xl font-bold text-emerald-400">Bem Vindo ao meu Site</a>
                 
                 {/* Links para Desktop */}
                 <div className="hidden md:flex space-x-8 items-center"> {/* Aumentei o espaço de space-x-6 para space-x-8 */}
