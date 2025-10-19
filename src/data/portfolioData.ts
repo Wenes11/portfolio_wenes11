@@ -8,6 +8,7 @@ import nodejsProjectImg from '../assets/images/project-nodejs.png';
 import powerBiCertImg from '../assets/images/cert-powerbi.jpg';
 import jsCertImg from '../assets/images/cert-javascript.jpg';
 import webscrapingCertImg from '../assets/images/cert-webscraping.jpg';
+import reportFinanceiroImg from '../assets/images/report-financeiro.png'; // <-- Lembre de importar sua nova imagem
 
 export const portfolioData = {
     name: "João Vitor",
@@ -42,14 +43,20 @@ export const portfolioData = {
             imageUrl: excelProjectImg,
             tags: ["Excel", "Dashboard", "Vendas"]
         },
-      // DENTRO DO ARQUIVO portfolioData.ts
-{
-      title: "Portal de Vagas com Node.js", // <-- TÍTULO ALTERADO
-      description: "Plataforma de busca de empregos construída com Node.js. Permite aos usuários pesquisar e encontrar vagas de acordo com seus interesses.", // <-- DESCRIÇÃO ALTERADA
-      link: "https://github.com/Wenes11/ProjetoNodeJs--1---1-",
-      imageUrl: nodejsProjectImg,
-      tags: ["Node.js", "Web Scraping", "JavaScript"] // <-- TAG SUGERIDA
-}
+        {
+            title: "Portal de Vagas com Node.js",
+            description: "Plataforma de busca de empregos construída com Node.js. Permite aos usuários pesquisar e encontrar vagas de acordo com seus interesses.",
+            link: "https://github.com/Wenes11/ProjetoNodeJs--1---1-",
+            imageUrl: nodejsProjectImg,
+            tags: ["Node.js", "Web Scraping", "JavaScript"]
+        },
+        {
+            title: "Relatório Financeiro Interativo",
+            description: "Relatório focado na análise financeira, utilizando DAX para métricas avançadas e botões para navegação intuitiva focada no cliente.",
+            link: "https://github.com/Wenes11/Report_Financeiro",
+            imageUrl: reportFinanceiroImg,
+            tags: ["Power BI", "DAX", "Finanças"]
+        }
     ],
     experiences: [
         {
@@ -66,15 +73,15 @@ export const portfolioData = {
         }
     ],
     certifications: [
-        { 
+        {
             title: "Análise de Dados com Power BI",
             imageUrl: powerBiCertImg
         },
-        { 
+        {
             title: "JavaScript Básico ao Avançado",
             imageUrl: jsCertImg
         },
-        { 
+        {
             title: "WebScraping com Python",
             imageUrl: webscrapingCertImg
         }
