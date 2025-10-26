@@ -9,7 +9,7 @@ import powerBiCertImg from '../assets/images/cert-powerbi.jpg';
 import jsCertImg from '../assets/images/cert-javascript.jpg';
 import webscrapingCertImg from '../assets/images/cert-webscraping.jpg';
 import reportFinanceiroImg from '../assets/images/report-financeiro.png'; // <-- Lembre de importar sua nova imagem
-
+import certificadoDadosComBI from '../assets/images/DashBoards&Excel.jpg'; // <-- Lembre de importar sua nova imagem
 export const portfolioData = {
     name: "João Vitor",
     role: "Analista de Dados",
@@ -84,6 +84,10 @@ export const portfolioData = {
         {
             title: "WebScraping com Python",
             imageUrl: webscrapingCertImg
+        },
+        {
+            title: "Certificação Dashboards & Excel",
+            imageUrl: certificadoDadosComBI
         }
     ],
 };
