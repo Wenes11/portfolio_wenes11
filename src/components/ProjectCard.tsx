@@ -1,7 +1,7 @@
 // src/components/ProjectCard.tsx
 import React from 'react';
 // Agora ele vai encontrar o 'Project' porque nós o exportamos no passo 1
-import { Project } from '../data/portfolioData';
+import type { Project } from '../data/portfolioData';
 
 interface ProjectCardProps {
   project: Project;
