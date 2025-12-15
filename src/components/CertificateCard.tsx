@@ -1,6 +1,6 @@
 // src/components/CertificateCard.tsx
 import React from 'react';
-import { Certificate } from '../data/portfolioData';
+import type { Certificate } from '../data/portfolioData';
 
 interface CertificateCardProps {
   certificate: Certificate;
