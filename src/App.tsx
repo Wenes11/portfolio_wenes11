@@ -1,10 +1,12 @@
-/* src/App.tsx */
+/* Copie e cole TODO este conteúdo para o seu arquivo: src/App.tsx */
+
+import React from 'react';
 import Header from './components/Header';
 import ProjectCard from './components/ProjectCard';
 import CertificateCard from './components/CertificateCard';
 import { portfolioData } from './data/portfolioData';
 
-// --- Ícones (Refatorados para Componentes Limpos) ---
+// --- Ícones (Mantidos e limpos) ---
 const MailIcon = () => (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>);
 const LinkedinIcon = () => (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-2.199 1.561-4.001 3.508-4.001 1.666 0 2.492 1.115 2.492 2.75v9.65h4.983v-8.75c0-4.75-2.69-7.25-6.25-7.25s-5.222 2.5-6.231 4.25h.021v-3.5h-4.989v16h4.989z"/></svg>);
 const GithubIcon = () => (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372. eighties .1102. eighties 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>);
@@ -13,15 +15,18 @@ const InstagramIcon = () => (<svg xmlns="http://www.w3.org/2000/svg" className="
 
 function App() {
   return (
-    <div className="bg-slate-900 text-slate-300 min-h-screen font-sans overflow-x-hidden selection:bg-emerald-500/30">
+    // TEMA: BLACK & GOLD (Slate 950 como base, Amber como destaque)
+    <div className="bg-slate-950 text-slate-300 min-h-screen font-sans overflow-x-hidden selection:bg-amber-500/30 selection:text-amber-100">
       
-      {/* Background Glow Effects (Para o efeito de vidro funcionar) */}
+      {/* Background Glow Effects (Elegância Sutil) */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-[100px] animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px]"></div>
+        {/* Luz Dourada no topo esquerdo */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] animate-pulse"></div>
+        {/* Luz Azul Profunda na base direita */}
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-900/20 rounded-full blur-[120px]"></div>
       </div>
 
-      {/* Conteúdo Principal (z-10 para ficar acima do background) */}
+      {/* Conteúdo Principal */}
       <div className="relative z-10">
         <Header />
 
@@ -32,26 +37,27 @@ function App() {
             id="about" 
             className="flex flex-col md:flex-row items-center justify-center min-h-[85vh] gap-12 scroll-mt-24"
           >
-            {/* Card de Vidro */}
-            <div className="relative w-full max-w-5xl bg-slate-800/40 backdrop-blur-xl border border-white/10 rounded-2xl p-8 md:p-16 shadow-2xl flex flex-col md:flex-row items-center gap-10">
+            {/* Card de Vidro Premium */}
+            <div className="relative w-full max-w-5xl bg-slate-900/60 backdrop-blur-xl border border-white/5 rounded-2xl p-8 md:p-16 shadow-2xl flex flex-col md:flex-row items-center gap-10">
               
-              {/* Imagem com Efeito de Glow */}
+              {/* Moldura da Imagem */}
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-blue-500 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 to-blue-600 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
                 <img 
                   src={portfolioData.profileImageUrl}
                   alt={`Foto de ${portfolioData.name}`} 
-                  className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover object-top border-4 border-slate-800 shadow-2xl"
+                  className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover object-top border-4 border-slate-900 shadow-2xl"
                 />
               </div>
 
               {/* Texto */}
               <div className="text-center md:text-left flex-1 space-y-6">
                 <div>
-                  <h2 className="text-emerald-400 font-medium tracking-wider uppercase text-sm mb-2">Desenvolvedor Web</h2>
+                  <h2 className="text-amber-400 font-medium tracking-widest uppercase text-sm mb-2">Portfolio Profissional</h2>
                   <h1 className="text-4xl md:text-6xl font-bold text-slate-100 tracking-tight leading-tight">
                     {portfolioData.name}
                   </h1>
+                  <h3 className="text-xl text-blue-200/80 font-light mt-2">{portfolioData.role}</h3>
                 </div>
                 
                 <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl">
@@ -59,10 +65,10 @@ function App() {
                 </p>
 
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
-                  <a href="#contact" className="px-8 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold rounded-lg transition-all shadow-lg hover:shadow-emerald-500/25">
+                  <a href="#contact" className="px-8 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg transition-all shadow-lg hover:shadow-amber-500/25">
                     Fale Comigo
                   </a>
-                  <a href="#projects" className="px-8 py-3 border border-slate-600 hover:border-emerald-400 text-slate-300 hover:text-white rounded-lg transition-colors">
+                  <a href="#projects" className="px-8 py-3 border border-slate-700 hover:border-amber-400 text-slate-300 hover:text-white rounded-lg transition-colors">
                     Ver Projetos
                   </a>
                 </div>
@@ -74,11 +80,14 @@ function App() {
           <section id="projects" className="scroll-mt-24">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">Meus Projetos</h2>
-              <div className="h-1 w-20 bg-emerald-500 mx-auto rounded-full"></div>
+              <div className="h-0.5 w-24 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto"></div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Grid ajustado para os cards ficarem bonitos no tema escuro */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {portfolioData.projects.map(project => (
+                // Dica: Você precisará ajustar as cores dentro do ProjectCard também, 
+                // mas aqui passamos uma classe wrapper se necessário
                 <ProjectCard key={project.title} project={project} />
               ))}
             </div>
@@ -88,17 +97,17 @@ function App() {
           <section id="experience" className="scroll-mt-24">
              <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">Experiência Profissional</h2>
-              <div className="h-1 w-20 bg-emerald-500 mx-auto rounded-full"></div>
+              <div className="h-0.5 w-24 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto"></div>
             </div>
 
-            <div className="max-w-3xl mx-auto relative border-l border-slate-700 space-y-12 pl-12">
+            <div className="max-w-3xl mx-auto relative border-l border-slate-800 space-y-12 pl-12">
               {portfolioData.experiences.map((exp, index) => (
                 <div key={index} className="relative group">
-                  {/* Dot da Timeline */}
-                  <div className="absolute -left-[54px] top-1 h-3 w-3 bg-slate-900 border-2 border-emerald-500 rounded-full group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                  {/* Dot da Timeline - Dourado */}
+                  <div className="absolute -left-[54px] top-1 h-3 w-3 bg-slate-950 border-2 border-amber-500 rounded-full group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_rgba(245,158,11,0.5)]"></div>
                   
-                  <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:border-emerald-500/30 transition-colors">
-                    <h3 className="text-xl font-bold text-emerald-400 mb-1">{exp.role}</h3>
+                  <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-800 hover:border-amber-500/30 transition-all duration-300">
+                    <h3 className="text-xl font-bold text-amber-400 mb-1">{exp.role}</h3>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-4 font-mono">
                       <span className="font-semibold text-slate-300">{exp.company}</span>
                       <span>•</span>
@@ -115,7 +124,7 @@ function App() {
           <section id="certifications" className="scroll-mt-24">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">Certificados</h2>
-              <div className="h-1 w-20 bg-emerald-500 mx-auto rounded-full"></div>
+              <div className="h-0.5 w-24 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {portfolioData.certifications.map(cert => (
@@ -126,13 +135,14 @@ function App() {
 
           {/* --- CONTATO --- */}
           <section id="contact" className="scroll-mt-24 pb-20">
-            <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-12 rounded-3xl border border-slate-700 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
-               {/* Decorative Glow */}
-               <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] -mr-16 -mt-16"></div>
+            <div className="bg-gradient-to-b from-slate-900 to-black p-12 rounded-3xl border border-slate-800 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
+               {/* Decorative Glow Azul e Dourado */}
+               <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-[80px] -mr-16 -mt-16"></div>
+               <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-900/10 rounded-full blur-[80px] -ml-16 -mb-16"></div>
 
                <h2 className="text-3xl font-bold text-slate-100 mb-6 relative z-10">Vamos trabalhar juntos?</h2>
                <p className="text-slate-400 mb-10 max-w-lg mx-auto text-lg relative z-10">
-                 Estou disponível para novos projetos e oportunidades. Me chame em qualquer uma das redes abaixo.
+                 Disponível para projetos de Engenharia de Dados, Automação e Desenvolvimento Web.
                </p>
 
                <div className="flex flex-wrap justify-center gap-6 relative z-10">
@@ -149,9 +159,9 @@ function App() {
 
         </main>
 
-        <footer className="text-center py-8 border-t border-slate-800/50 bg-slate-900/50 backdrop-blur-sm">
-          <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} <span className="text-slate-300">{portfolioData.name}</span>. Desenvolvido com React & Tailwind.
+        <footer className="text-center py-8 border-t border-slate-900 bg-black backdrop-blur-sm">
+          <p className="text-slate-600 text-sm">
+            © {new Date().getFullYear()} <span className="text-slate-400">{portfolioData.name}</span>. Engenharia & Code.
           </p>
         </footer>
       </div>
@@ -159,13 +169,13 @@ function App() {
   );
 }
 
-// Pequeno componente auxiliar para botões de contato
+// Componente de botão auxiliar ajustado para Gold
 const ContactButton = ({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) => (
   <a 
     href={href} 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="flex items-center gap-3 px-6 py-3 bg-slate-700/50 hover:bg-emerald-500/20 text-slate-300 hover:text-emerald-400 rounded-lg border border-slate-600 hover:border-emerald-500/50 transition-all duration-300 group"
+    className="flex items-center gap-3 px-6 py-3 bg-slate-800/50 hover:bg-amber-500/10 text-slate-300 hover:text-amber-400 rounded-lg border border-slate-700 hover:border-amber-500/50 transition-all duration-300 group"
   >
     <span className="group-hover:scale-110 transition-transform">{icon}</span>
     <span className="font-medium">{label}</span>
